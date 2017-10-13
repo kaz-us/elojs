@@ -1,0 +1,19 @@
+* {
+    color: #6c6c6c
+}
+body {
+    background-color: rgb(19, 19, 24);
+    color: #b5a4ff
+}
+h1 {
+    color: #AA9245;
+    text-align: center;
+    text-shadow: 3px 3px 10px black;
+}
+.message {
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #ACACAC;
+    width: 600px;
+    text-align: left;
+}
