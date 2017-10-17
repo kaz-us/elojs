@@ -1,9 +1,9 @@
-var cat = document.querySelector("#cat");
-var hat = document.querySelector("#hat");
+var cat = document.querySelector(".message #cat");
+var hat = document.querySelector(".message #hat");
 var catangle = 0, lastTime = null;
 var hatangle = 180;
-var displacex = document.documentElement.clientWidth/2;
-var displacey = document.documentElement.clientHeight/2;
+var displacex = document.documentElement.clientWidth/3;
+var displacey = document.documentElement.clientHeight/3;
 function animate(time) {
   if (lastTime != null) {
     catangle += (time - lastTime) * 0.001;
