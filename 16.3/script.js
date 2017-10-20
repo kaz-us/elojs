@@ -35,14 +35,14 @@ function lines (p) {
 
     img.addEventListener("load", function () {
 
-        if (y >= 400 - spriteH) up = true;
+        if (y >= cx.canvas.height - spriteH) up = true;
         if (y <= 0) up = false;
-        if (x >= 600 - spriteW) left = true;
+        if (x >= cx.canvas.width - spriteW) left = true;
         if (x <= 0) left = false;
         step*=speed;
         up ? y-=step : y+=step;
         left ? x-=step : x+=step;
-        cx.clearRect(0, 0, 600, 400);
+        cx.clearRect(0, 0, cx.canvas.width, cx.canvas.height);
         cx.drawImage(img, x, y, spriteW, spriteH);
 
     });
